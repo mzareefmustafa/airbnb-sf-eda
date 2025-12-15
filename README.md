@@ -1,72 +1,89 @@
-# 📊 Superstore Performance Dashboard (Excel Analytics Project)
+# 🏡 Airbnb San Francisco Analysis (Python Data Cleaning + EDA Project)
 
-An end-to-end Excel project analyzing** Superstore sales (2014–2017)**.Includes data cleaning, KPIs, pivot tables, slicers, a polished dashboard, and an insights report.
-
-🔗 Interactive Dashboard ([Excel Web Link](https://1drv.ms/x/c/3eed8f80380b20a2/IQBYxejoOpmzRq_jUUuTwCzFAcxGAyCyOSNtAOOz4_gXitQ?e=iAixij))
+An end-to-end Python project analyzing Airbnb listings in San Francisco (2025 scrape).
+Includes data cleaning, feature engineering, exploratory data analysis, statistical summaries, visualizations, and a written insights report.
 
 ## 🚀 What This Project Shows
 
-- Advanced Excel analysis & dashboard design
-- Pivot tables, pivot charts, slicers
-- KPI creation (Sales, Profit, Profit Margin)
-- Trend, category, regional, customer, and operational analysis
-- Business insights & storytelling
+- Real-world data cleaning with pandas
+- Handling missing values, mixed data types, and messy fields
+- Feature engineering (amenities count, price per person, host tenure, rating % score)
+- Exploratory data analysis using plots and grouped statistics
+- Insight generation across pricing, neighborhoods, hosts, reviews, and amenities
+- Professional notebook structure and storytelling through data
 
 ---
 
-## 📈 Dashboard Highlights
+## 📊 Analysis Highlights
 
-The dashboard includes:
-- Category & Sub-Category Performance
-- Regional Sales & Orders
-- Monthly Sales Trend
-- Segment Profitability
-- Customer Profitability (Pareto)
-- Shipping Speed & Volume
-- Discount Impact on Profit
-- Top 10 / Bottom 10 Products
-- Slicers: Region, Segment, Category, Ship Mode, Year
+This project explores:
+- Price Distribution across thousands of San Francisco listings
+- Room Type Pricing (Entire home vs Private room vs Shared spaces)
+- Neighborhood Differences using the top 10 areas by listing volume
+- Ratings & Review Trends and their relationship to price
+- Superhost Behavior and how it compares to non-superhosts
+- Host Tenure and its influence on listing performance
+- Amenities & Value (Do more amenities → higher pricing?)
+Visualizations include:
+- Histograms (price, ratings)
+- Boxplots (room type, neighborhood, superhost status)
+- Scatterplots (rating vs price, amenities vs price, host tenure vs price)
+- Zoomed-in scatterplots for better visibility of heavy-tailed price data
 
 ---
 
 ## 🛠 Tools & Skills Used
 
-- Microsoft Excel (PivotTables, PivotCharts, Slicers)
-- Data Cleaning
-- KPI Measurement
-- Pareto Analysis (80/20)
-- Trend & Variance Analysis
-- Dashboard Design
+- Python
+- pandas for data cleaning & transformation
+- NumPy for numeric handling
+- Matplotlib & Seaborn for visualizations
+- Jupyter Notebook for reproducible analysis
+- Data wrangling, feature engineering, exploratory analysis, and insights storytelling
 
 ---
 
 ## 📂 Files Included
 
-- Superstore_Dashboard.xlsx   ``` # Interactive Excel dashboard ```
-- Dashboard.pdf               ``` # Clean exported dashboard ```
-- Insights.pdf                ``` # Written findings ```
-- README.md                   ``` # Project documentation ```
+```text
+data/
+│
+├── clean/
+│   └── listings_clean.csv            <-- cleaned dataset
+│
+└── raw/
+    └── listings.csv                  <-- raw data preserved
+
+notebooks/
+├── 01_data_cleaning.ipynb            <-- cleaning workflow
+└── 02_eda.ipynb                      <-- analysis, plots, insights
+
+.gitignore                             <-- should exclude venv, __pycache__, etc.
+
+README.md                              <-- main project documentation
+```
+
 
 ---
 
 ## 🧠 Key Insights (Quick Summary)
 
-- Technology leads sales across all categories.
-- The West region drives the most revenue and orders.
-- Home Office has the highest profit per order.
-- High discount (50%+) sales generate large negative margins.
-- A small set of customers contributes disproportionately to total profit.
-(Full insights available in Insights.pdf)
+- Prices are highly skewed, with most listings under $300 and a smaller luxury segment driving the upper tail.
+- Room type is a major price driver: entire homes/apartments command the highest rates.
+- Neighborhoods vary significantly: Western Addition, Bernal Heights, Cole Valley, and Alamo Square show higher median prices.
+- Superhosts charge slightly more, but ratings between superhosts and non-superhosts remain similar.
+- Ratings are tightly clustered between 4.5 and 5.0, showing limited price differentiation.
+- More amenities generally correlate with higher pricing, especially within each room type category.
+- Host experience (tenure) does not guarantee higher ratings but tends to align with more optimized pricing.
+(Full insights available in 02_eda.ipynb.)
 
 ---
 
-## Sources
-
-- [Kaggle Superstore Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
+## 📦 Data Source
+- [Inside Airbnb – San Francisco (2025)](https://insideairbnb.com/get-the-data/)
 
 ---
 
 ## 📜 License
 
 This project is licensed under the **MIT License**. See the [LICENSE.txt](LICENSE.txt) file for details.
-# airbnb-sf-eda
