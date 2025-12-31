@@ -46,7 +46,7 @@ This project was built to:
 - Jupyter Notebook
 - Data wrangling, feature engineering, EDA, and insights storytelling
 
-## 📂 Files Included
+## Files Included
 
 ```text
 data/
