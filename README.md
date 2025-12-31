@@ -1,47 +1,50 @@
-# 🏡 Airbnb San Francisco Market Analysis (Python EDA)
+# Airbnb San Francisco Market Analysis (Python EDA)
 
-An end-to-end Python project analyzing Airbnb listings in San Francisco (2025 scrape).
-Includes data cleaning, feature engineering, exploratory data analysis, statistical summaries, visualizations, and a written insights report.
+An end-to-end Python analysis of **Airbnb listings in San Francisco** using a 2025 dataset.  
+The project focuses on **data cleaning, feature engineering, exploratory analysis, and insight generation** around pricing, neighborhoods, host behavior, and amenities.
 
-## 🚀 What This Project Shows
+## Purpose
 
-- Real-world data cleaning with pandas
-- Handling missing values, mixed data types, and messy fields
-- Feature engineering (amenities count, price per person, host tenure, rating % score)
-- Exploratory data analysis using plots and grouped statistics
-- Insight generation across pricing, neighborhoods, hosts, reviews, and amenities
-- Professional notebook structure and storytelling through data
+This project was built to:
+- Clean and prepare a large, messy real-world dataset
+- Identify key drivers of Airbnb pricing in San Francisco
+- Compare listing performance across neighborhoods, room types, and hosts
+- Translate exploratory analysis into clear, business-relevant insights
 
----
+## Key Questions Answered
 
-## 📊 Analysis Highlights
+- How are Airbnb prices distributed across San Francisco?
+- Which room types and neighborhoods command higher prices?
+- Do superhosts charge more or receive better ratings?
+- How do amenities and host experience influence pricing?
+- Are higher ratings associated with higher prices?
 
-This project explores:
-- Price Distribution across thousands of San Francisco listings
-- Room Type Pricing (Entire home vs Private room vs Shared spaces)
-- Neighborhood Differences using the top 10 areas by listing volume
-- Ratings & Review Trends and their relationship to price
-- Superhost Behavior and how it compares to non-superhosts
-- Host Tenure and its influence on listing performance
-- Amenities & Value (Do more amenities → higher pricing?)
-Visualizations include:
-- Histograms (price, ratings)
-- Boxplots (room type, neighborhood, superhost status)
-- Scatterplots (rating vs price, amenities vs price, host tenure vs price)
-- Zoomed-in scatterplots for better visibility of heavy-tailed price data
+## Analysis Highlights
 
----
+- Price distribution analysis across thousands of listings
+- Pricing comparisons by room type (entire home, private room, shared space)
+- Neighborhood-level price differences among the most active areas
+- Superhost vs non-superhost behavior and pricing
+- Relationship between amenities, host tenure, ratings, and price
 
-## 🛠 Tools & Skills Used
+## Key Insights
+
+- Prices are highly skewed: most listings are under **$300**, with a small luxury segment driving the upper tail.
+- **Room type** is a major price driver; entire homes and apartments command the highest rates.
+- Neighborhoods vary significantly; Western Addition, Bernal Heights, Cole Valley, and Alamo Square show higher median prices.
+- Superhosts charge slightly more, but ratings are similar to non-superhosts.
+- Ratings cluster tightly between **4.5–5.0**, limiting their usefulness as a price differentiator.
+- Listings with more amenities generally command higher prices, especially within the same room type.
+- Host tenure aligns more with optimized pricing than with higher ratings.
+
+## Tools & Skills Used
 
 - Python
-- pandas for data cleaning & transformation
-- NumPy for numeric handling
-- Matplotlib & Seaborn for visualizations
-- Jupyter Notebook for reproducible analysis
-- Data wrangling, feature engineering, exploratory analysis, and insights storytelling
-
----
+- pandas (data cleaning and transformation)
+- NumPy
+- Matplotlib and Seaborn
+- Jupyter Notebook
+- Data wrangling, feature engineering, EDA, and insights storytelling
 
 ## 📂 Files Included
 
@@ -63,33 +66,13 @@ notebooks/
 README.md                              <-- main project documentation
 ```
 
-
----
-
-## 🧠 Key Insights (Quick Summary)
-
-- Prices are highly skewed, with most listings under $300 and a smaller luxury segment driving the upper tail.
-- Room type is a major price driver: entire homes/apartments command the highest rates.
-- Neighborhoods vary significantly: Western Addition, Bernal Heights, Cole Valley, and Alamo Square show higher median prices.
-- Superhosts charge slightly more, but ratings between superhosts and non-superhosts remain similar.
-- Ratings are tightly clustered between 4.5 and 5.0, showing limited price differentiation.
-- More amenities generally correlate with higher pricing, especially within each room type category.
-- Host experience (tenure) does not guarantee higher ratings but tends to align with more optimized pricing.
-(Full insights available in 02_eda.ipynb.)
-
----
-
-## 📦 Data Source
+## Data Source
 - [Inside Airbnb – San Francisco (2025)](https://insideairbnb.com/get-the-data/)
 
----
-
-## 👤 Author
+## Author
 
 **Mohammed Zareef-Mustafa**
 
----
-
-## 📜 License
+## License
 
 This project is licensed under the **MIT License**. See the [LICENSE.txt](LICENSE.txt) file for details.
