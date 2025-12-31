@@ -1,4 +1,4 @@
-# 🏡 Airbnb San Francisco Analysis (Python Data Cleaning + EDA Project)
+# 🏡 Airbnb San Francisco Market Analysis (Python EDA)
 
 An end-to-end Python project analyzing Airbnb listings in San Francisco (2025 scrape).
 Includes data cleaning, feature engineering, exploratory data analysis, statistical summaries, visualizations, and a written insights report.
